@@ -1,133 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de pagina con bootStrap 5</title>
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" </head>
 </head>
+
 <body>
-  <header>
-        
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">clase de redes</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Historia</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  tipo
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">MAN</a></li>
-                  <li><a class="dropdown-item" href="#">WAN</a></li>
-                  <li><hr class="dropdown-divider">Historia</li>
-                  <li><a class="dropdown-item" href="#">LAN</a></li>
-                </ul>
-              </li>
-            
-            </ul>
-            
-          </div>
-        </div>
-    <div>
 
-    </nav>
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/portada1.jpg.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/portada2.jpg.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/portada3.jpg.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </header>
-  <section>
-    <div class="row mt-5">
-      <aside class="col-sm-12 col-md-4">
-        <div class="list-group">
-          <a href="#definicion" class="list-group-item list-group-item-action" aria-current="true">
-          Definición
+    <header class="header">
 
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">¿Como funcionan las redes?</a>
-          <a href="#" class="list-group-item list-group-item-action">Modelo OSI</a>
-          <a href="#" class="list-group-item list-group-item-action">Conmutación</a>
+        <div class="menu container">
+            <a href="#" class="logo"></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+
+            </nav>
         </div>
-      </aside>
-      <section class="col-sm 12 col-md-8">
-        <!--Definicion de redes-->
-          <div class="row">
-            <div id="definicion">
-              <h1>¿Qué es una red?</h1>
-              <small><strong>29 de febrero 2024 por Alexandra Ramos</strong></small>
-              <img src="img/conexiones.jpg.jpg" alt="">
-              <p>En informática, se entiende por red (usualmente red informática o red de computadoras) a la interconexión de un número determinado de computadores (o de redes, a su vez) mediante dispositivos alámbricos o inalámbricos que, mediante impulsos eléctricos, ondas electromagnéticas u otros medios físicos, les permiten enviar y recibir información en paquetes de datos, compartir sus recursos y actuar como un conjunto organizado. Las redes cuentan con procesos de emisión y recepción de mensajes, así como de una serie de códigos y estándares que garantizan su comprensión por los computadores conectados a la red (y no por cualquier otro). A dichos estándares de comunicación se los conoce como protocolos, y el más común de ellos actualmente es el TCP/IP.</p>
-              <p>La construcción de una red permite administrar una comunicación interna, compartir la ejecución de programas o el acceso a Internet, e incluso la administración de periféricos como impresoras, escáneres, etc. Este tipo de sistemas de enjambre sostienen actualmente muchos de los procesos de administración y procesamiento de información en nuestros días, como son las redes de telecomunicaciones, la Internet o las diversas Intranet empresariales o de organizaciones varias.</p>
-              <p>La aparición de las redes revolucionó el modo de comprender la informática y abrió un nuevo campo dentro de esta disciplina para atender las necesidades de mejoría, seguridad y operatividad de la comunicación informática.</p>
+        <div class="header-content container">
+
+            <h1>Enfermedades e infecciones de transmicion sexual</h1>
+            <p>
+                Las enfermedades de transmisión sexual (ETS) o infecciones de transmisión sexual (ITS) son infecciones
+                que se transmiten de una persona a otra a través del contacto sexual. El contacto suele ser vaginal,
+                oral y anal. Pero a veces pueden transmitirse a través de otro contacto físico íntimo involucrando el
+                pene, vagina, boca o ano. Esto se debe a que algunas ETS, como el herpes y el VPH, se transmiten por
+                contacto de piel a piel.
+            </p>
+
+        </div>
+    </header>
+
+    <section class="Enfermedades">
+
+        <img class="enfermedades-img" src="img/imagen virus.png" alt="">
+
+        <div class="Enfermdedades-content container">
+
+            <h2>Los diferentes tipos de Enfermdeades de transmisión sexual</h2>
+            <p class="txt-p">
+                Se conocen aproximadamente 20 infecciones diferentes que se transmiten por contacto sexual. Aquí hay
+                algunas descripciones de algunas de las más comunes y conocidas:
+
+                Clamidia,
+                Gonorrea,
+                Herpes genital,
+                VIH/SIDA,
+                Virus del papiloma humano (HPV por sus siglas en inglés),
+                Sífilis,
+                Vaginosis bacteriana,
+                Tricomoniasis,
+                Hepatitis viral,
+            </p>
+            <div class="Clamidia-1">
+                <img src="img/gonorrea.png" alt="">
+                <h3>Enfermedades e infecciones</h3>
+                <p>Las infecciones de trasmisión sexual causan las enfermedades de trasmisión sexual. Se contagian
+                    principalmente por contacto sexual. Las infecciones de trasmisión sexual son causadas por bacterias,
+                    virus o parásitos. Una infección de trasmisión sexual puede pasar de una persona a otra a través de
+                    la sangre, el semen o los líquidos vaginales y otros líquidos corporales.</p>
             </div>
-          </div>
-         <!--/Definicion de red-->
-         <!--funcion de las redes-->
-         <div class="row"
-         <div id="funcion"
-         <h1> ¿como funcionan las redes?</h1>
-         <p>Las redes siguen protocolos, que definen cómo se envían y reciben las comunicaciones. Estos protocolos permiten la comunicación de dispositivos. Cada dispositivo en una red utiliza un Internet Protocol o dirección IP, una cadena de números que identifica de forma única un dispositivo y permite que otros lo reconozcan.</p>
-         <img src="img/conectoresrj45.jpg.jpg" class="rounded float-end w-25" >
-         <p>Las redes de computadoras conectan nodos como computadoras, enrutadores y conmutadores mediante cables, fibra óptica o señales inalámbricas. Esas conexiones permiten a los dispositivos de una red comunicarse y compartir información y recursos.</p>
-         
+            <div class="Clamidia-2">
+                <img src="img/enfermdead1.jpeg" alt="">
+                <h3>Enfermedades e infecciones</h3>
+                <p>Las infecciones de trasmisión sexual causan las enfermedades de trasmisión sexual. Se contagian
+                    principalmente por contacto sexual. Las infecciones de trasmisión sexual son causadas por bacterias,
+                    virus o parásitos. Una infección de trasmisión sexual puede pasar de una persona a otra a través de
+                    la sangre, el semen o los líquidos vaginales y otros líquidos corporales.</p>
+            </div>
+        </div>
+        <a href="img/HERPES-GENITAL.png" class="btn-1">El herpes genital</a>
+        </div>
 
-      </section>
-      <footer>
-        <div class="row text-bg-dark p-3 mt-5 mb-5 pt-3>
-          <p class="text center">
-            todos los derechos reservados 2024. Diseñador web:Alexandra Urquia Ramos
-          </div>
-          </div>
-      </footer>
+    </section>
+    <main class="tipos">
+        <div class="tipos-content container">
+            <h2>Infecciones de transmision sexual</h2>
+
+            <div class="tipos-group"></div>
+
+            <div class="tipos-1">
+                <h3>Gonorrea</h3>
+                <p>A veces, las infecciones de trasmisión sexual se contagian por vías distintas del contacto sexual.
+                    Por ejemplo, las infecciones de trasmisión sexual pueden contagiarse a los bebés durante el embarazo
+                    o el parto. Las infecciones de trasmisión sexual pueden contagiarse por transfusiones de sangre o
+                    agujas
+                    compartidas.</p>
+            </div>
+            <div class="tipos-1">
+                <h3>El herpes genital</h3>
+                <p>El herpes genital es una enfermedad de transmisión sexual causada por el virus del herpes simple.
+                    Puede causar llagas en el área genital o rectal, nalgas y muslos. Puede contagiarse al tener
+                    relaciones sexuales vaginales, anales u orales con alguien que lo tenga. El virus puede contagiarse
+                    aún cuando las llagas no están presentes. Las madres pueden infectar a sus bebés durante el parto.
+                    .</p>
+            </div>
+            <div class="tipos-1">
+                <h3>Verrugas Genitales</h3>
+                <p>Las verrugas genitales son uno de los tipos más comunes de infecciones de transmisión sexual. El
+                    virus que causa la formación de verrugas se llama virus del papiloma humano (VPH). Existen muchos
+                    tipos de VPH, y casi todas las personas que tienen actividad sexual se infectarán, al menos, con un
+                    tipo en algún momento de su vida..</p>
+            </div>
+            <div class="tipos-1">
+                <h3>Tricomoniasis</h3>
+                <p>La tricomoniasis es una infección de trasmisión sexual común provocada por un parásito. En las
+                    mujeres, la tricomoniasis puede provocar secreción vaginal con mal olor, picazón genital y micción
+                    dolorosa..</p>
+            </div>
+            <div class="tipos-1">
+                <h3>Clamidia</h3>
+                <p>La clamidia es una enfermedad de transmisión sexual común. Es causada por la bacteria Chlamydia
+                    trachomatis. Cualquier persona puede contraer clamidia. A menudo no causa síntomas, por lo que es
+                    posible que las personas no sepan que la tienen. Los antibióticos pueden curarla. Pero si no se
+                    trata, la clamidia puede causar serios problemas de salud.
+
+                    .</p>
+            </div>
+            <div class="tipos-1">
+                <h3>Hepatitis Viral</h3>
+                <p>
+            </div>
+            <p>La hepatitis es la inflamación del hígado. Inflamación es la hinchazón de órganos que ocurren cuando se
+                lesionan o infectan, y puede dañar su hígado. La hinchazón y daño puede afectar el buen funcionamiento
+                de este órgano..</p>
+            <a href="#" class="btn-1">Inicio</a>
+        </div>
+    </main>
+    <section>
+        <div class="general-2"></div>
+
+        <div class="general-2">
+            <h2>sintomas de la clamidia</h2>
+            <p>La clamidia es una infección bacteriana del tracto genital. La clamidia puede ser difícil de detectar
+                porque las infecciones de etapa temprana a menudo causan pocos o ningún signo o síntoma. Cuando se
+                producen, los síntomas suelen comenzar entre una y tres semanas después de haber estado expuesto a la
+                clamidia y pueden ser leves y pasar rápidamente.
+
+                Estos son algunos de los signos y síntomas:
+
+                Micción dolorosa
+                Dolor abdominal en la parte baja
+                Flujo vaginal en mujeres
+                Secreción del pene en hombres
+                Dolor durante las relaciones sexuales en las mujeres
+                Sangrado entre períodos en las mujeres
+                Dolor testicular en hombres
+            </p>
+    </section>
     </div>
-  </section>
+    <div class="general-3"></div>
+    <section>
+        <div class="general-3">
+            <h2>Metodos para prevenir estas enfermedades</h2>
+            <p>Preservativo masculino. Es el método más estudiado y que, hasta ahora, se sabe que ofrece más protección.
+                Preservativo femenino de poliuretano o de nitrilo. Puede reducir sustancialmente el riesgo de contagio
+                de una ITS si se usa de una manera correcta y sistemática.
+                Barreras bucales de látex. Disminuyen el riesgo de infección durante una relación sexual oral.
+            </p>
 
-     <script src="js/popper.min.js"></script>
-     <script src="js/bootStrap.min.js"></script>
+        </div>
+    </section>
+
+    </section>
+
+    <section class="blog container">
+
+        <h2>Aprendamos mas sobre estas enfermedades</h2>
+        <p>Estas enfermdedades cada ves son mas peligrosas y claramente algunas de estas no tienen cura.</p>
+
+        <div class="blog-content">
+            <div class="blog-1">
+                <img src="img/tipos.png" alt="">
+                <h3>tipos de infecciones</h3>
+                <p>Atraves de esta imagen podemos ver algunos tipos de enfermedades y infecciones de transmision sexual.
+                </p>
+            </div>
+            <div class="blog-2">
+                <img src="img/tipos de enfermedades 3.jpg" alt="">
+                <h3>tipos de fluidos</h3>
+                <p>Atraves de esta imagen podemos ver algunos tipos de fluidos por los cuales se puede transmitir
+                    cualquier tipo de estas enefermedades antes mecionadas.
+                </p>
+            </div>
+        </div>
+        <a href="#" class="btn-1">Inicio</a>
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="footer-content container">
+            <div class="link">
+                <h3></h3>
+                <ul>
+                    <div class="row text-bg-dark p-3 mt-5 mb-5 pt-3>
+                        <p class=" text center">
+                    <li><a href="#">todos los derechos reservados 2024. Diseñador web:Alexandra Urquia Ramos</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+   
+    </div>
+
+
 </body>
+
 </html>
